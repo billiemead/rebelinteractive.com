@@ -6,8 +6,8 @@ wordpress_sites:
   rebelinteractive.com:
     site_hosts:
       - canonical: rebelinteractive.localdev
-        redirects:
-          - www.rebelinteractive.localdev
+        # redirects:
+        #  - www.rebelinteractive.localdev
     local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
     admin_email: billie@billiemead.com
     multisite:
