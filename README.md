@@ -28,4 +28,6 @@
 6. Run `yarn build` to build all SCSS partials, js, etc.
 7. From `/trellis` run `vagrant up`
 8. Finally from `/trellis` run `trellis provision development`
-9. Then from browser please visit: http://rebelinteractive.localdev
+9. To get MySQL database (already located in `trellis` folder), first `vagrant ssh`
+10. Once in Vargant box, change directory `cd trellis` and run `mysql -h localhost -u root -p rebelinteractive_com_development < dump.sql`  password is `devpw`
+9. Then from browser visit: http://rebelinteractive.localdev
