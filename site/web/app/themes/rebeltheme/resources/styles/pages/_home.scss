@@ -1,0 +1,174 @@
+body main {
+  overflow: hidden;
+}
+.custom-logo {
+  margin-top: -6px;
+}
+
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block;
+}
+
+body {
+  margin: 0;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 2;
+  color: #fff;
+  text-align: left;
+  background-color: #fff;
+}
+
+.main {
+  background-color: #000;
+}
+
+@media (max-width: 1440px) {
+  .wp-block-cover-image .wp-block-cover__inner-container, .wp-block-cover .wp-block-cover__inner-container {
+    max-width: 1440px;
+    z-index: 1;
+    color: #fff;
+  }
+}
+
+.wp-block-cover-image .wp-block-cover__inner-container, .wp-block-cover .wp-block-cover__inner-container {
+    position: absolute;
+    left: 140px;
+    background: transparent;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Vollkorn", "serif";
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+#main > div > div > div > div > div > p {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  display: block;
+  line-height: 1;
+  font-weight: 900;
+  margin: 0 0 0.5rem;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Vollkorn", "serif";
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+#main > div > div > div > div > div > em:before {
+  background: linear-gradient(180deg,#abefff,#8a50cc 50%,#c5002d);
+  box-shadow: 0 2px 4px 0 #480569;
+  content: "";
+  left: 0.5rem;
+  position: absolute;
+  top: 2rem;
+  width: 2px;
+  height: 100px;
+  transition: 300ms;
+  transition-delay: 2050ms;
+}
+
+#main > div > div > div > div > div > em {
+  font-style: normal;
+  padding: 0 2rem;
+  margin: 0 0 2rem;
+  display: block;
+  font-size: 3.25rem;
+  text-align: left;
+  color: #ffffff;
+  font-family: "Vollkorn", "serif";
+  text-transform: uppercase;
+  font-weight: 900;
+  max-width: 800px;
+  line-height: 1.2;
+}
+@media (max-width: 767.98px) {
+  #main > div > div > div > div > div > em {
+    font-style: normal;
+    padding: 0 2rem;
+    margin: 0 0 2rem;
+    display: block;
+    font-size: 2.25rem;
+    text-align: left;
+    color: #ffffff;
+    font-family: "Vollkorn", "serif";
+    text-transform: uppercase;
+    font-weight: 900;
+    max-width: 800px;
+    line-height: 1.2;
+  }
+  .wp-block-cover-image .wp-block-cover__inner-container, .wp-block-cover .wp-block-cover__inner-container {
+    position: absolute;
+    left: 25px;
+    background: transparent;
+}
+
+}
+.wp-block-button__link .wp-element-button {
+  animation-name: fadeIn;
+  animation-timing-function: ease;
+  animation-duration: 0.3s;
+  animation-delay: 2.1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@media (max-width: 767.98px) {
+  #main > div > div > div > div > div > div > div > a {
+    font-size: 0.725em;
+  }
+}
+#main > div > div > div > div > div > div > div > a {
+  background: transparent;
+  border: solid 1px #ffffff;
+  color: #ffffff;
+  border-radius: 30px;
+  padding: 0.5rem 2rem;
+  display: flex;
+  font-weight: 900;
+  text-align: center;
+  vertical-align: middle;
+  font-family: 'Vollkorn', serif;
+  text-transform: uppercase;
+  line-height: 22px;
+  margin: 0;
+}
+#main > div > div > div > div > div > div > div > a:hover {
+  background: #ffffff;
+  border: solid 1px #ffffff;
+  color: #C5002D;
+}
+@media (min-width: 768px) {
+  .wp-block-acf-hero-video > video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      -o-object-fit: cover;
+      object-fit: cover;
+      -o-object-position: center center;
+      object-position: center center;
+      height: 100%;
+  }
+}
+#main > div > div > div > div.wp-block-acf-hero-video {
+  height: calc(100vh - 104px);
+}
+#hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center center;
+  object-position: center center;
+  height: 100%;
+  z-index: -1;
+}

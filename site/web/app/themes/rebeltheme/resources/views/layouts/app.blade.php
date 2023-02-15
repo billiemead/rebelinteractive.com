@@ -4,26 +4,18 @@
 
 @include('sections.header')
 
+<div class="content-wrapper">
   <main id="main" class="main">
 
-    <div class="container">
+    <div class="container-main">
       <div class="row">
         <div class="col">
           @yield('content')
-        </div>
-        <div class="col">
-
-          @hasSection('sidebar')
-          <aside class="sidebar">
-            @yield('sidebar')
-          </aside>
-          @endif
-
         </div>
       </div>
     </div>
   </main>
 
-
+</div>
 
 @include('sections.footer')

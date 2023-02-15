@@ -3,7 +3,7 @@
     <nav class="navbar navbar-expand-md navbar-dark" role="navigation">
       @if (the_custom_logo('custom-logo'))@endif
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-primary" aria-controls="navbar-primary" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
+        <span class="navbar-toggler-icon-2"><i class="fa fa-bars"></i></span>
       </button>
       @if (has_nav_menu('primary_navigation'))
         {{-- {!! wp_nav_menu($primaryMenu) !!} --}}
