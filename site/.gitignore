@@ -4,7 +4,7 @@ web/app/plugins/*
 web/app/mu-plugins/*/
 web/app/themes/twentytwentythree/
 web/app/upgrade
-web/app/uploads/*
+!web/app/uploads/*
 !web/app/uploads/.gitkeep
 web/app/cache/*
 
@@ -16,8 +16,7 @@ web/.htaccess
 *.log
 
 # Dotenv
-.env
-.env.*
+
 !.env.example
 
 # Composer
