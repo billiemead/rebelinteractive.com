@@ -34,7 +34,7 @@ export default async (app) => {
      * Proxy origin (`WP_HOME`)
      * @see {@link https://bud.js.org/docs/bud.proxy/}
      */
-    .proxy('http://example.test')
+    .proxy('http://rebelinteractive.localdev')
 
     /**
      * Development origin
@@ -81,8 +81,5 @@ export default async (app) => {
         customFontSize: false,
       },
     })
-    .useTailwindColors()
-    .useTailwindFontFamily()
-    .useTailwindFontSize()
     .enable();
 };

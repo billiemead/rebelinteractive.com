@@ -19,9 +19,15 @@
     "translate:mo": "wp i18n make-mo ./resources/lang ./resources/lang"
   },
   "devDependencies": {
+    "@popperjs/core": "^2.11.6",
     "@roots/bud": "6.8.0",
-    "@roots/bud-tailwindcss": "6.8.0",
-    "@roots/sage": "6.8.0"
+    "@roots/bud-sass": "6.8.0",
+    "@roots/sage": "6.8.0",
+    "bootstrap": "^5.2.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.3.0",
+    "@fortawesome/free-regular-svg-icons": "^6.3.0",
+    "@fortawesome/free-solid-svg-icons": "^6.3.0"
+  }
 }

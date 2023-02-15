@@ -5,13 +5,25 @@
 @include('sections.header')
 
   <main id="main" class="main">
-    @yield('content')
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          @yield('content')
+        </div>
+        <div class="col">
+
+          @hasSection('sidebar')
+          <aside class="sidebar">
+            @yield('sidebar')
+          </aside>
+          @endif
+
+        </div>
+      </div>
+    </div>
   </main>
 
-  @hasSection('sidebar')
-    <aside class="sidebar">
-      @yield('sidebar')
-    </aside>
-  @endif
+
 
 @include('sections.footer')

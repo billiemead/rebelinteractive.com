@@ -49,7 +49,7 @@ add_action('after_setup_theme', function () {
      *
      * @link https://wptavern.com/gutenberg-10-5-embeds-pdfs-adds-verse-block-color-options-and-introduces-new-patterns
      */
-    remove_theme_support('block-templates');
+    // remove_theme_support('block-templates');
 
     /**
      * Register the navigation menus.
@@ -103,6 +103,27 @@ add_action('after_setup_theme', function () {
         'style',
     ]);
 
+    add_theme_support( 'custom-logo', array(
+        'height'               => 82,
+        'width'                => 300,
+        'flex-height'          => true,
+        'flex-width'           => true,
+        'unlink-homepage-logo' => true,
+    ) );
+    $defaults = array(
+        'default-image'          => '',
+        'default-preset'         => 'default', // 'default', 'fill', 'fit', 'repeat', 'custom'
+        'default-position-x'     => 'left',    // 'left', 'center', 'right'
+        'default-position-y'     => 'top',     // 'top', 'center', 'bottom'
+        'default-size'           => 'auto',    // 'auto', 'contain', 'cover'
+        'default-repeat'         => 'repeat',  // 'repeat-x', 'repeat-y', 'repeat', 'no-repeat'
+        'default-attachment'     => 'scroll',  // 'scroll', 'fixed'
+        'default-color'          => '',
+        'wp-head-callback'       => '_custom_background_cb',
+        'admin-head-callback'    => '',
+        'admin-preview-callback' => '',
+    );
+    add_theme_support( 'custom-background', $defaults );
     /**
      * Enable selective refresh for widgets in customizer.
      *
@@ -120,7 +141,7 @@ add_action('widgets_init', function () {
     $config = [
         'before_widget' => '<section class="widget %1$s %2$s">',
         'after_widget' => '</section>',
-        'before_title' => '<h3>',
+        'before_title' => '<h3 class="header3">',
         'after_title' => '</h3>',
     ];
 
